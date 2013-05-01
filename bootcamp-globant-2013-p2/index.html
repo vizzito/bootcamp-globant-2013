@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+     	<script type="text/javascript" src="lib/jquery-1.9.1.min.js"></script>
+      <script type="text/javascript" src="lib/jquery-mobile.js"></script>
+     	<script type="text/javascript" src="js/highlight.js"></script>
+    	<script type="text/javascript" src="js/click.js"></script>
+      <script type="text/javascript" src="js/twitter.js"></script>
+     	<script type="text/javascript" src="js/load.js"></script>
+     	<link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
+      <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.0/jquery.mobile-1.3.0.min.css">
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1"> 
+      <title>Globant :: Welcome to the HTML5 bootcamp</title>
+    </head>
+    <body>
+      <div data-role="page">
+        <div data-role="header">
+          <h1> Globant Bootcamp</h1>
+          <ul data-role="listview">
+            <li><a href="#first-page" data-transition="slide">Enter your name</a></li>
+            <li><a href="#second-page" data-transition="slideup">Get tweets</a></li>
+            <li><a href="#third-page" data-transition="flip">Links and dialogs</a></li>
+          </ul>
+        </div>
+      </div>    
+
+      <div data-role="page" id="first-page" data-title="First Page" data-add-back-btn="true" data-back-btn-text="Back">
+        <div data-role="header">
+          <h1>Form Page</h1>
+        </div>
+        <div data-role="content"> 
+          <div id="div-content">
+            <button id="button-animation">Button</button>
+              <label for="basic">Alias:</label> 
+              <input type="text" id="alias" value="Martin"></input>
+          </div>
+          <div class="floated">
+            <div id="tweets"></div>
+          </div>
+        </div>
+    </div>
+
+    <div data-role="page" id="second-page" data-title="Second Page" data-add-back-btn="true" data-back-btn-text="Back">
+      <div data-role="header">
+        <h1>Tweets Page</h1>
+      </div>
+      <div data-role="content">
+        <button id="button-tweets">Get Tweets</button>
+         <ul id="tweetsList" data-role="listview"></ul>
+      </div> 
+    </div>
+
+    <div data-role="page" id="third-page" data-title="Third Page" data-add-back-btn="true" data-back-btn-text="Back">
+      <div data-role="header">
+        <h1>Dialogs and Buttons</h1>
+      </div>
+      <div data-role="body">
+        <a data-role="button" href="#page-dialog" data-rel="dialog" data-inline="true" data-transition="pop">
+             <span class="ui-btn-text">Open dialog</span>
+        </a>
+        <a data-role="button" href="#page-dialog-index" data-rel="dialog" data-inline="true" data-transition="pop">
+             <span class="ui-btn-text">Index dialog</span>
+        </a>
+        <a href="pages/sample1.html" data-ajax="false" data-inline="true">Linked page</a>
+      </div>
+    </div>
+
+    <div id="page-dialog" data-role="page" data-close-btn="right">
+      <div data-role="header">
+        <h1> Dialog Box </h1>
+      </div> 
+      <div data-role="content">
+       <p>this is a dialog, to close it please press X or back button</p>
+        <li><a href="#" data-role="button" data-inline="true" data-rel="back">Back</a></li>
+      </div>
+    </div>
+
+    <div id="page-dialog-index" data-role="page" data-close-btn="right">
+      <div data-role="header">
+        <h1> Dialog Index </h1>
+      </div> 
+      <div data-role="content">
+       <p>Choose the page to go</p>
+          <li><a href="#first-page">Enter your name</a></li>
+          <li><a href="#second-page"="slideup">Get tweets</a></li>
+          <li><a href="#third-page">Links and dialogs</a></li>
+          <li><a href="#" data-role="button" data-inline="true" data-rel="back">Back</a></li>        
+      </div>
+    </div> 
+
+    <div id="dialog-tweet" data-role="page" data-close-btn="right">
+      <div data-role="header">
+        <h1> Tweet Info </h1>
+      </div> 
+      <div data-role="content">
+        <div id="info-tweet">
+        </div>
+      </div>
+    </div> 
+    
+  </body>
+</html>
