@@ -1,0 +1,39 @@
+.color-red{
+	color: red;
+}
+
+.highlight{
+	background-color: yellow;
+}
+.tweet{
+    background-color: #EEE;
+	border: 2px;
+	border-radius: 6px; 
+	border-style:solid;
+	margin:0 auto 0 auto; 
+	width:75%;
+}
+
+.background{
+    opacity:0.8;
+	z-index: 1001;
+	position: fixed;
+	top:0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	background-color: #FFF ;
+	display: none;
+}
+
+.floated{
+	position: relative;
+	z-index: 1002;
+	opacity: 1.0;
+	top:0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	background-color: #FFF ;
+
+}
